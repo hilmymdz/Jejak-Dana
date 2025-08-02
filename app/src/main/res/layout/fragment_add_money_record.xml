@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ui.transaction.AddMoneyRecordFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Money Record"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blue_primary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"/>
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:background="@drawable/textfield"
+        android:hint="Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"/>
+    <RadioGroup
+        android:id="@+id/rg_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Income"/>
+        <RadioButton
+            android:id="@+id/rb_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Expense"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/et_date"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:background="@drawable/textfield"
+        android:hint="select a date"
+        android:textSize="16sp"
+        android:focusable="false"
+        android:clickable="true"
+        android:drawableEnd="@android:drawable/ic_menu_my_calendar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:background="@drawable/textfield"
+        android:hint="0"
+        android:textSize="16sp"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Categories"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:id="@+id/spinner_category"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textfield"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description (Optional)"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add a note..."
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/textfield"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="10dp"
+        android:text="Save"
+        android:backgroundTint="@color/blue_primary"
+        android:layout_marginTop="80dp"/>
+
+</LinearLayout>

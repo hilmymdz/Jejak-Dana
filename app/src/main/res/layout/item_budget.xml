@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/grey_light">
+
+        <TextView
+            android:id="@+id/tv_budget_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/blue_primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_budget_options"/>
+
+        <ImageView
+            android:id="@+id/btn_budget_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/entypo_dots_three_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_budget_name"/>
+
+        <TextView
+            android:id="@+id/label_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_budget_name" />
+
+        <TextView
+            android:id="@+id/tv_budget_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_categories" />
+
+        <TextView
+            android:id="@+id/label_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Period"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/label_categories" />
+
+        <TextView
+            android:id="@+id/tv_budget_period"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/label_period" />
+
+        <TextView
+            android:id="@+id/tv_budget_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IDR 1.000.000"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_budget_category" />
+
+        <TextView
+            android:id="@+id/tv_budget_progress_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_budget_period" />
+
+        <ProgressBar
+            android:id="@+id/pb_budget_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:max="100"
+            tools:progress="40"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_budget_amount" />
+
+        <TextView
+            android:id="@+id/tv_budget_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pb_budget_progress" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

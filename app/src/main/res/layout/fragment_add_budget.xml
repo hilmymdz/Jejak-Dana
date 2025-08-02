@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".ui.budget.AddBudgetFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add Budget"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/blue_primary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"/>
+    <EditText
+        android:id="@+id/budget_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:background="@drawable/textfield"
+        android:hint="Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/budget_amount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:background="@drawable/textfield"
+        android:hint="IDR"
+        android:textSize="16sp"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Period"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp"/>
+    <Spinner
+        android:id="@+id/spinner_period"
+        android:layout_width="match_parent"
+        android:background="@drawable/textfield"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Categories"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp"/>
+    <Spinner
+        android:id="@+id/spinner_category_budget"
+        android:background="@drawable/textfield"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description (Optional)"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/budget_desc"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:padding="15dp"
+        android:background="@drawable/textfield"
+        android:hint="Description"
+        android:textSize="16sp" />
+
+    <!-- Other fields: Date, Amount, Category, Description -->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save_budget"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/blue_primary"
+        android:text="Save"
+        app:cornerRadius="10dp" />
+
+</LinearLayout>

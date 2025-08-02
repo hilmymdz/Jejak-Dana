@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.jejakdana.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addMoneyRecordFragment"
+            app:destination="@id/addMoneyRecordFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/budgetFragment"
+        android:name="com.example.jejakdana.ui.budget.BudgetFragment"
+        android:label="fragment_budget"
+        tools:layout="@layout/fragment_budget" >
+        <action
+            android:id="@+id/action_budgetFragment_to_addBudgetFragment"
+            app:destination="@id/addBudgetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addMoneyRecordFragment"
+        android:name="com.example.jejakdana.ui.transaction.AddMoneyRecordFragment"
+        android:label="fragment_add_money_record"
+        tools:layout="@layout/fragment_add_money_record" />
+
+    <fragment
+        android:id="@+id/addBudgetFragment"
+        android:name="com.example.jejakdana.ui.budget.AddBudgetFragment"
+        android:label="fragment_add_budget"
+        tools:layout="@layout/fragment_add_budget" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.jejakdana.ui.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>
