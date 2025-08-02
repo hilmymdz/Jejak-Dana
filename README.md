@@ -6,7 +6,8 @@
 
 | Halaman Utama | Halaman Anggaran | Halaman Pengaturan |
 | :---: | :---: | :---: |
-| ![Tampilan Halaman Utama](<img width="453" height="1004" alt="image" src="https://github.com/user-attachments/assets/6f8beea5-9dfd-4b68-b2a3-d4810952ed24" />) | ![Tampilan Halaman Anggaran](<img width="454" height="1004" alt="image" src="https://github.com/user-attachments/assets/39046e47-3bab-4a1b-b3c5-2a516ef39985" />) | ![Tampilan Halaman Pengaturan](<img width="453" height="1004" alt="image" src="https://github.com/user-attachments/assets/b1d7e653-b76a-473f-aa2f-ce7e0936a964" />) |
+| ![Tampilan Halaman Utama](<img width="290" height="642" alt="Picture1" src="https://github.com/user-attachments/assets/0295a7a8-836a-49a9-9f90-f357fd594e07" />
+) | ![Tampilan Halaman Anggaran](<img width="454" height="1004" alt="image" src="https://github.com/user-attachments/assets/39046e47-3bab-4a1b-b3c5-2a516ef39985" />) | ![Tampilan Halaman Pengaturan](<img width="453" height="1004" alt="image" src="https://github.com/user-attachments/assets/b1d7e653-b76a-473f-aa2f-ce7e0936a964" />) |
 
 
 ## Fitur Utama
