@@ -17,14 +17,3 @@
 - **Riwayat Transaksi:** Lihat daftar semua transaksi yang telah Anda catat, lengkap dengan ikon kategori untuk identifikasi cepat.
 - **Pengaturan Data:** Kelola data Anda dengan opsi untuk menghapus semua transaksi atau semua anggaran untuk memulai dari awal.
 
-## Teknologi dan Arsitektur
-Aplikasi ini dibangun dengan mengikuti praktik terbaik pengembangan Android modern.
-- **Bahasa:** [Kotlin](https://kotlinlang.org/)
-- **Arsitektur:** MVVM (Model-View-ViewModel)
-- **Komponen Inti Jetpack:**
-    - **UI Layer:** [Fragments](https://developer.android.com/guide/fragments) & [XML Layouts](https://developer.android.com/guide/topics/ui/declaring-layout)
-    - **Navigation:** [Navigation Component](https://developer.android.com/guide/navigation) untuk mengelola alur antar layar.
-    - **Database:** [Room Persistence Library](https://developer.android.com/training/data-storage/room) sebagai lapisan abstraksi di atas database SQLite lokal.
-    - **Lifecycle & State Management:** [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) dan [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) untuk mengelola data UI yang sadar siklus hidup (*lifecycle-aware*).
-- **Asynchronous Programming:** [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) untuk menangani operasi database di *background thread*.
-- **Tampilan Daftar:** [RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview) untuk menampilkan daftar transaksi dan anggaran secara efisien.
